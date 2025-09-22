@@ -28,8 +28,8 @@ chatbot responded.
 determine which techniques produced the best customer experience.
 
 6. Identify Prompt Patterns for Each Design Aspect:
-Idea Generation Prompts:
 
+Idea Generation Prompts:
 -	Prompt: “What features can be incorporated into the automation system to optimize production and reduce downtime?” Generated Ideas:
 - Sensors for real-time monitoring of equipment performance.
 -	Predictive maintenance alerts to anticipate equipment failures.
@@ -37,7 +37,6 @@ Idea Generation Prompts:
 - Cloud-based dashboards for remote monitoring and control of machinery.
 
 Persona and Context Prompts:
-
 - Prompt: “What should the user interface and control system convey to the operators and managers?” Generated Context:
 -	The user interface should be intuitive and provide real-time data on machine performance, energy usage, and alerts.
 -	The system should convey reliability and ease of use, with minimal training required for operators.
@@ -50,15 +49,15 @@ Persona and Context Prompts:
 -	Enable real-time monitoring and remote control of manufacturing systems.
 -	Reduce energy consumption by optimizing processes.
 
-### Prompt Design and Techniques
+## Prompt Design and Techniques
 
-1. Zero-Shot Prompting
+### 1. Zero-Shot Prompting
 - Without giving examples, the chatbot was asked to respond directly to a query.
 - Prompt: “Where is my order #12345?”
 - Observation: The chatbot could respond, but tone consistency varied. Sometimes the
 response was too generic or robotic.
 
-2. One-Shot Prompting
+### 2. One-Shot Prompting
 - A single example was provided before asking the chatbot to respond to a new query.
 Prompt Example:
 - “Example: Customer asks: Where is my order #98765? → Bot: Your order is out for
@@ -67,12 +66,12 @@ delivery and will arrive tomorrow.
 - Observation: The chatbot’s response became more aligned with the expected format
 and tone.
 
-3. Few-Shot Prompting
+### 3. Few-Shot Prompting
 - Multiple examples were given to set a clear pattern for the chatbot to follow.
 - Observation: This significantly improved the chatbot’s tone and consistency. It
 maintained a polite, professional style even for new queries.
 
-4. Chain-of-Thought Prompting
+### 4. Chain-of-Thought Prompting
 - The chatbot was instructed to think step by step before answering.
 Prompt Example:
 “The customer says they received a damaged item.
@@ -83,7 +82,7 @@ Prompt Example:
 - Observation: The responses became well-structured, covering all steps
 systematically.
 
-5. ReAct Prompting
+### 5. ReAct Prompting
 The chatbot was instructed to reason and then take action.
 - Prompt Example:
 “Decide if a refund or replacement is more appropriate. Think first, then respond to
@@ -91,19 +90,19 @@ the customer.”
 - Observation: This approach worked best for decision-making tasks like returns and
 refunds.
 
-6. Self-Consistency Prompting
+### 6. Self-Consistency Prompting
 - The chatbot generated multiple possible responses and selected the most appropriate
 one.
 - Observation: The final chosen response was usually more balanced and customer friendly.
 
-7. Role Prompting
+### 7. Role Prompting
 The chatbot was given a role to play.
 Prompt Example:
 - “You are a polite and empathetic customer service agent. Help the customer track
 their order.”
 - Observation: This produced highly natural, professional, and empathetic replies.
 
-8. Tree-of-Thought Prompting
+### 8. Tree-of-Thought Prompting
 - The chatbot was encouraged to explore multiple solutions before picking the best one.
 Prompt Example:
 - “Generate three ways to resolve a delayed shipment:
@@ -114,14 +113,14 @@ Choose the best option.”
 - Observation: The chatbot became more creative and considered customer
 satisfaction while deciding.
 
-9. Reflection Prompting
+### 9. Reflection Prompting
 - The chatbot was asked to review and refine its own response.
 Prompt Example:
 - “Here’s your answer: <response>. Make it more polite and professional.”
 - Observation: The response quality improved significantly, with more polished and
 customer-friendly wording.
 
-10. Multimodal Prompting
+### 10. Multimodal Prompting
 - Text and image were combined.
 - Example: Uploading a product image and asking: “Is this available in blue?”
 - Observation: Useful for product-related queries but requires an image database 
