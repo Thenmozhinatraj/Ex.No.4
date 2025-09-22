@@ -5,29 +5,29 @@
 
 ### Explanation - Any one use case from Unit 5 and generate the report for that with the unit 2 Prompt type
 Procedure:
-1. Understanding Chatbot Requirements:
+### 1. Understanding Chatbot Requirements:
 - The chatbot must answer customer FAQs, track orders, provide product
 recommendations, and handle complaints politely.
 
-2. Selection of Prompting Techniques:
+### 2. Selection of Prompting Techniques:
 - We selected a wide range of prompting techniques — including Zero-shot, Few-shot,
 Chain-of-Thought, Role Prompting, and others — to cover different aspects of
 chatbot development.
 
-3. Prompt Design:
+### 3. Prompt Design:
 - For each technique, prompts were specifically designed to handle real-world
 customer scenarios such as order tracking, damaged item reporting, and delayed
 delivery.
 
-4. Experimentation:
+### 4. Experimentation:
 - Each prompting technique was applied to the same scenario to evaluate how the
 chatbot responded.
 
-5. Observation and Analysis:
+### 5. Observation and Analysis:
 - The quality, tone, and accuracy of the chatbot’s responses were compared to
 determine which techniques produced the best customer experience.
 
-6. Identify Prompt Patterns for Each Design Aspect:
+### 6. Identify Prompt Patterns for Each Design Aspect:
 
 Idea Generation Prompts:
 -	Prompt: “What features can be incorporated into the automation system to optimize production and reduce downtime?” Generated Ideas:
